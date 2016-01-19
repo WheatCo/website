@@ -4,23 +4,25 @@ title: Work with Us | Wheat Co.
 
 <div class="main col gap-4 justify">
   <div class="center col gap-4 hero">
+    <img src="/images/rocket.svg" alt="" width="50">
     <h1>Let's get started.</h1>
   </div>
 
-  <form action="//formspree.io/hello@wheat.co" method="POST">
-  <div class="col justify gap-3">
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="name" placeholder="Name">
-    </label>
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="_replyto" placeholder="Email">
-    </label>
-    <label class="col justify gap-1">
-      <textarea class="input-textarea" name="request" placeholder="What can we help you with?"></textarea>
-    </label>
-    <div class="row gap-3">
-      <input class="btn-primary" type="submit" value="Send">
-      <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
-    </div>
+  <div class="col center">
+    <form class="centered-form col justify gap-3" action="//formspree.io/hello@wheat.co" method="POST">
+      <label class="col justify gap-1">
+        <input class="input-text" type="text" name="name" placeholder="Name">
+      </label>
+      <label class="col justify gap-1">
+        <input class="input-text" type="text" name="_replyto" placeholder="Email">
+      </label>
+      <label class="col justify gap-1">
+        <textarea class="input-textarea" name="request" placeholder="What can we help you with?" rows="7"></textarea>
+      </label>
+      <div class="row gap-3">
+        <input class="btn-primary" type="submit" value="Send">
+        <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
+      </div>
+    </form>
   </div>
 </div>
