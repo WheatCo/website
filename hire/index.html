@@ -5,6 +5,7 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Work with Us | Wheat Co.</title>
@@ -23,24 +24,26 @@
       </div>
       <div class="main col gap-4 justify">
   <div class="center col gap-4 hero">
-    <h1>Let's get started.</h1>
+    <img src="/images/rocket.svg" alt="" width="50">
+    <h1>Let's get your project rolling.</h1>
   </div>
 
-  <form action="//formspree.io/hello@wheat.co" method="POST">
-  <div class="col justify gap-3">
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="name" placeholder="Name">
-    </label>
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="_replyto" placeholder="Email">
-    </label>
-    <label class="col justify gap-1">
-      <textarea class="input-textarea" name="request" placeholder="What can we help you with?"></textarea>
-    </label>
-    <div class="row gap-3">
-      <input class="btn-primary" type="submit" value="Send">
-      <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
-    </div>
+  <div class="col center">
+    <form class="centered-form col justify gap-3" action="//formspree.io/hello@wheat.co" method="POST">
+      <label class="col justify gap-1">
+        <input class="input-text" type="text" name="name" placeholder="Your Name">
+      </label>
+      <label class="col justify gap-1">
+        <input class="input-text" type="text" name="_replyto" placeholder="Your Email">
+      </label>
+      <label class="col justify gap-1">
+        <textarea class="input-textarea" name="request" placeholder="What would you like to hire us to do?" rows="7"></textarea>
+      </label>
+      <div class="row gap-3">
+        <input class="btn-primary" type="submit" value="Send Message">
+        <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
+      </div>
+    </form>
   </div>
 </div>
 

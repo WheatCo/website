@@ -1,86 +1,101 @@
-body {
-  font-size: 14px; }
+/*
+Error: Undefined variable: "$text-color".
+        on line 1 of /Users/robert/Desktop/website/source/stylesheets/_variables.scss
+        from line 1 of /Users/robert/Desktop/website/source/stylesheets/styleblocks.scss
 
-.main {
-  max-width: 60em;
-  width: 100%;
-  border-radius: 3px;
-  overflow: hidden; }
+1: @import 'variables';
+2: @import 'general';
+3: @import 'buttons';
+4: @import 'inputs';
+5: @import 'flexblocks';
 
-.header {
-  max-width: 60em;
-  width: 100%;
-  height: 3.5em;
-  color: #fff; }
-
-.content {
-  padding: 1rem; }
-
-.btn, .btn-primary {
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  transition: all 90ms linear;
-  box-shadow: 0 0 0 1px transparent;
-  font: inherit;
-  border-radius: 3px;
-  background-color: #ddd;
-  padding: 0 1.1em;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  cursor: pointer;
-  white-space: nowrap;
-  line-height: 1;
-  height: 2.3em;
-  display: flex;
-  align-items: center;
-  justify-centent: center; }
-  .btn:focus, .btn-primary:focus {
-    outline: 0;
-    border-color: #45AAFF;
-    box-shadow: 0 0 0 1px #45AAFF; }
-  .btn:hover, .btn-primary:hover {
-    background-color: #e5e5e5; }
-  .btn:active, .btn-primary:active {
-    background-color: #ddd; }
-  .btn::-moz-focus-inner, .btn-primary::-moz-focus-inner {
-    border: 0;
-    padding: 0; }
-
-.btn-primary {
-  background-color: #4a8bfc;
-  color: #fff; }
-  .btn-primary:hover {
-    background-color: #639bfc; }
-  .btn-primary:active {
-    background-color: #4a8bfc; }
-
-.input-text, .input-textarea {
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  transition: all 90ms linear;
-  box-shadow: 0 0 0 1px transparent;
-  font: inherit;
-  border-radius: 3px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  padding: 0 0.6em;
-  border-radius: 3px;
-  line-height: 1.7; }
-  .input-text:focus, .input-textarea:focus {
-    outline: 0;
-    border-color: #45AAFF;
-    box-shadow: 0 0 0 1px #45AAFF; }
-
-.input-text {
-  height: 2.3em; }
-
-.input-textarea {
-  padding-top: 0.3em;
-  padding-bottom: 0.3em; }
-
-.input-label {
-  display: block;
-  font-weight: 600;
-  line-height: 1; }
+Backtrace:
+/Users/robert/Desktop/website/source/stylesheets/_variables.scss:1
+/Users/robert/Desktop/website/source/stylesheets/styleblocks.scss:1
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:469:in `visit_variable'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:20:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:278:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/renderers/sass.rb:66:in `evaluate'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/file_renderer.rb:77:in `block in render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.5/lib/active_support/notifications.rb:166:in `instrument'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/util.rb:120:in `instrument'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/file_renderer.rb:76:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/template_renderer.rb:95:in `_render_with_all_renderers'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/template_renderer.rb:67:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/sitemap/resource.rb:139:in `block in render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.5/lib/active_support/notifications.rb:166:in `instrument'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/util.rb:120:in `instrument'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/sitemap/resource.rb:129:in `render'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:111:in `process_request'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:65:in `block in call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:64:in `catch'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:64:in `call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:153:in `call'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/mock.rb:74:in `request'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/mock.rb:56:in `get'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:165:in `output_resource'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:95:in `each'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:95:in `output_files'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:59:in `run!'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-cli-4.0.0/lib/middleman-cli/build.rb:65:in `build'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `block in invoke_all'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `each'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `map'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `invoke_all'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/group.rb:232:in `dispatch'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:115:in `invoke'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:40:in `block in register'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+/Users/robert/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/middleman-cli-4.0.0/bin/middleman:23:in `<top (required)>'
+/Users/robert/.rbenv/versions/2.2.1/bin/middleman:23:in `load'
+/Users/robert/.rbenv/versions/2.2.1/bin/middleman:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$text-color\".\A         on line 1 of /Users/robert/Desktop/website/source/stylesheets/_variables.scss\A         from line 1 of /Users/robert/Desktop/website/source/stylesheets/styleblocks.scss\A \A 1: @import 'variables';\A 2: @import 'general';\A 3: @import 'buttons';\A 4: @import 'inputs';\A 5: @import 'flexblocks';"; }
