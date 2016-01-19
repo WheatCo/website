@@ -1,28 +1,26 @@
-$color-primary: #4a8bfc;
-$color-primary-alt: lighten($color-primary, 5); // highlight color
-$color-primary-contrast: #fff; // for text on bg
+$color-primary: $text-color;
+$color-primary-alt: #f4f4f4; // highlight color
+$color-primary-contrast: $bg-color; // for text on bg
 $color-secondary: #ddd;
 $color-secondary-alt: lighten($color-secondary, 3); // highlight color
 $color-secondary-contrast: #000; // for text on bg
-$color-outline: #45AAFF;
+$color-outline: transparent;
 
 $radius: 3px;
 $time: 90ms; // for color changes
 $time-long: 150ms; // for sweeps in and out
-$height-input: 2.3em;
+$height-input: 2.5em;
 $padding-content: 1rem;
 
 @mixin std-input {
   box-sizing: border-box;
-  border: 1px solid transparent;
+  border: 0;
   transition: all $time linear;
   box-shadow: 0 0 0 1px transparent;
   font: inherit;
   border-radius: $radius;
   &:focus {
     outline: 0;
-    border-color: $color-outline;
-    box-shadow: 0 0 0 1px $color-outline;
   }
 }
 

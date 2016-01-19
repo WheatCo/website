@@ -1,4 +1,7 @@
 @charset "utf-8";
+$text-color: #d5d5d5;
+$bg-color: #2d2d2d;
+
 @import 'styleblocks';
 
 // TODO USE FLEXBLOCKS INSEAD OF CONTENT BOTTOM MARGINS
@@ -8,8 +11,6 @@
   @include define-flexblocks(xl-, 0.4rem 0.66rem 1rem 1.65rem 2.72rem);
 }
 
-$text-color: #d5d5d5;
-$bg-color: #2d2d2d;
 
 body {
   font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
@@ -73,4 +74,9 @@ p {
 }
 ul {
   padding-left: 1.2em;
+}
+
+.centered-form {
+  width: 100%;
+  max-width: 30em;
 }
