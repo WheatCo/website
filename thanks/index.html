@@ -7,22 +7,28 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title>Thank you | Wheat Co.</title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7763312/634548/css/fonts.css" />
-    <%= javascript_include_tag  "all" %>
+    <script src="/javascripts/all.js"></script>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="thanks thanks_index">
     <div class="page col center gap-4">
       <div class="row bottom left navbar main gap-3">
         <a href="/"><img src="/images/logo.svg" alt="Wheat Co." class="logo"></a>
         <div class="fill"></div>
-        <%# <a class="navbar-link" href="#">Services</a> %>
         <a class="navbar-link" href="/work_with_us.html">Contact</a>
       </div>
-      <%= yield %>
+      <div class="main col gap-4 justify">
+  <div class="center col gap-4 hero">
+    <img src="/images/check.svg" alt="" width="50">
+    <h1>We'll be in touch shortly.</h1>
+    <p>Our average response time is 24 hours.</p>
+  </div>
+</div>
+
     </div>
   </body>
 </html>
