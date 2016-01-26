@@ -2,6 +2,7 @@
 $text-color: #d5d5d5;
 $bg-color: #2d2d2d;
 
+@import 'normalize';
 @import 'styleblocks';
 
 // TODO USE FLEXBLOCKS INSEAD OF CONTENT BOTTOM MARGINS
@@ -59,7 +60,10 @@ h1, h2 {
   font-size: 1em;
   margin: 0;
 }
-h1 { font-size: 1.3em; }
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+}
 
 .navbar-link {
   display: block;
