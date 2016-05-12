@@ -17,8 +17,14 @@
 
   <body class="<%= page_classes %>">
     <div class="col center gap-4 wrap">
-      <div class="row bottom center navbar main gap-3">
-        <a href="/"><img src="/images/logo.svg" alt="Wheat Co." class="logo"></a>
+      <div class="row middle center navbar gap-4">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Wheat Co." class="navbar-logo">
+        </a>
+        <a href="#" class="navbar-link">About</a>
+        <a href="#" class="navbar-link">Solutions</a>
+        <a href="#" class="navbar-link">Philanthropy</a>
+        <a href="#" class="navbar-link">Hire Us</a>
       </div>
       <%= yield %>
     </div>
