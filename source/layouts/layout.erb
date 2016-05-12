@@ -16,8 +16,8 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="col gap-4 wrap">
-      <div class="row middle center navbar gap-4">
+    <div class="col gap-4 wrap page">
+      <div class="row middle center gap-4">
         <a href="/">
           <img src="/images/logo.svg" alt="Wheat Co." class="navbar-logo">
         </a>
@@ -27,6 +27,29 @@
         <a href="#" class="navbar-link">Hire Us</a>
       </div>
       <%= yield %>
+      <div class="fill"></div>
+      <div class="col gap-4 footer">
+        <div class="logo-symbol"><img src="/images/logo_symbol.svg" alt=""></div>
+        <div class="xrow">
+          <div class="fill col gap-2">
+            <span class="footer-title">Company</span>
+            <div><a class="footer-link" href="#">About Us</a></div>
+            <div><a class="footer-link" href="#">Start a Project</a></div>
+            <div><a class="footer-link" href="#">The Wheat.co Blog</a></div>
+          </div>
+          <div class="fill col gap-2">
+            <span class="footer-title">Services</span>
+            <div><a class="footer-link" href="#">Development Services</a></div>
+            <div><a class="footer-link" href="#">Design Services</a></div>
+            <div><a class="footer-link" href="#">Deployment and Scaling</a></div>
+          </div>
+          <div class="fill col gap-2">
+            <span class="footer-title">Past Work</span>
+            <div><a class="footer-link" href="#">Case Study: Bauxy</a></div>
+            <div><a class="footer-link" href="#">Case Study: The Simple Dollar</a></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

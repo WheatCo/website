@@ -9,6 +9,7 @@
 }
 
 $text-color: #000;
+$highlight-color: #033A7D;
 
 body {
   font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
@@ -32,6 +33,7 @@ p {
 
 .wrap {
   padding: 40px 20px;
+  box-sizing: border-box;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -87,7 +89,24 @@ p {
     position: absolute;
     $pad: -20px;
     top: $pad; left: $pad; bottom: $pad; right: $pad;
-    background-color: #033A7D;
+    background-color: $highlight-color;
     z-index: 1;
   }
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding-top: 40px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #999;
+  &:hover { color: $text-color; }
+}
+
+.footer-title {
+  color: #bbb;
+  font-style: italic;
 }
