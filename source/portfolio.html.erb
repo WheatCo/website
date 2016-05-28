@@ -1,36 +1,29 @@
 ---
-title: Portfolio | Wheat Co.
+title: Data Visualization | Wheat Co
 ---
 
-<div class="hero middle">
-  <div class="hero-content">
-    <h1>Projects we've worked on.</h1>
-  </div>
-</div>
+<h1>Personal Finance Calculators</h1>
 
-<div class="row gap-4">
-  <div class="col gap-3 fill-3">
-    <p>While we're not allowed to talk about many of the projects we've worked on, this is a small sampling of what we've done.</p>
-  </div>
-  <div class="col gap-4 fill-2"></div>
-</div>
-
-<div class="row gap-4">
-  <div class="col gap-3 fill-3">
-    <h1>Financial Calculators</h1>
+<div class="xrow xgap-5 col gap-4">
+  <div class="col gap-3">
     <p><a href="http://www.thesimpledollar.com/">The Simple Dollar</a> is an personal financial advice website. When they came to us, they wanted an embeddable widget for calculating debt payoff schedules. We've now built them almost a dozen calculators of all sorts, including federal tax rates, state tax rates, auto loan calculations, and expected baby and pet costs.</p>
     <p>We researched the financial algorithms and rates, as well as wrote the design and code all from scratch.</p>
     <p>Technically, the project uses the Mithril.js and D3 libraries to generate the live charts and graphs, and our own in-house CSS layout library for the styling.</p>
   </div>
-  <div class="col gap-3 fill-2">
+  <div class="col gap-4">
     <div class="col gap-1">
-      <div><%= image_tag 'loancalc.png', class: 'std-image' %></div>
+      <div><%= image_tag 'loancalc.png', class: 'std-image', width: '300' %></div>
       <p class="caption">An equity schedule generated from the user's data.</p>
     </div>
     <div class="col gap-1">
-      <div><%= image_tag 'petcalc.png', class: 'std-image' %></div>
+      <div><%= image_tag 'petcalc.png', class: 'std-image', width: '300' %></div>
       <p class="caption">A dynamically updating pie chart from the project, explaining the breakdown of the user's expected pet cost.</p>
     </div>
+  </div>
+</div>
+
+<!-- <div class="row gap-4">
+  <div class="col gap-3 fill-2">
   </div>
 </div>
 
@@ -46,3 +39,4 @@ title: Portfolio | Wheat Co.
     </div>
   </div>
 </div>
+ -->

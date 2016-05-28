@@ -8,136 +8,84 @@
   @include define-flexblocks(x, 0.4rem 0.66rem 1rem 1.65rem 2.72rem);
 }
 
-$text-color: #000;
-$highlight-color: #033A7D;
+@mixin mono {
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B";
+  font-weight: bold;
+  text-transform: lowercase;
+}
 
-body {
-  font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
-  font-size: 14px;
+html {
+  font-family: "Sentinel SSm A", "Sentinel SSm B";
+  font-size: 17px;
   min-height: 450px;
   background-repeat: no-repeat;
+  background-color: #fff;
+  color: #222;
+  font-weight: 300;
+}
+
+body, .footer {
+  background-color: #202020;
+}
+
+.content {
   background-color: #f5f5f5;
 }
 
 h1 {
-  font-size: 20px;
+  @include mono;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.4;
   margin: 0;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 0;
+  max-width: 600px;
 }
 
 .wrap {
-  padding: 40px 20px;
+  padding: 10%;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.navbar-link {
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #777;
+.logo {
+  @include mono;
+  font-size: 20px;
   text-decoration: none;
-  &:hover { color: $text-color; }
+  border-bottom: none;
+  font-weight: bold;
 }
 
-.quote {
-  padding: 15px;
-  background-color: #e6e6e6;
-  font-weight: 500;
-  font-size: 15px;
+.bulletless {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.quote-source {
-  color: #666;
-}
-
-.hero {
-  height: 217px;
-  color: #fff;
-  position: relative;
-  background-color: #222222;
-
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background-image: image-url('bg.png');
-    background-size: cover;
-    opacity: 0.25;
-    z-index: 2;
-  }
-}
-
-.hero-content {
-  position: relative;
-  max-width: 350px;
-
-  &>h1 {
-    position: relative;
-    z-index: 4;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    $pad: -20px;
-    top: $pad; left: $pad; bottom: $pad; right: $pad;
-    background-color: $highlight-color;
-    z-index: 1;
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(#999,0.5);
+  &:hover {
+    background-color: rgba(#888,0.1);
   }
 }
 
 .footer {
-  border-top: 1px solid #ddd;
-  padding-top: 40px;
+  color: #e5e5e5;
 }
 
-.footer-link {
-  text-decoration: none;
-  font-weight: 500;
-  color: #999;
-  &:hover { color: $text-color; }
-}
-
-.footer-title {
-  color: #bbb;
+.list-header {
+  color: rgba(#e5e5e5, 0.6);
   font-style: italic;
 }
 
-.big-message {
-  padding: 90px 0;
-}
-
-.input-text, .input-textarea {
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  padding: 7px;
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 0px 3px #8EBEE1;
-    border-color: #15598E;
-  }
-}
-
-.btn-primary {
-  background-color: #0E7EFF;
-  border: none;
-  color: #fff;
-  border-radius: 3px;
-  padding: 7px 12px;
-  font-weight: 500;
-  &:focus {
-    outline: none;
-    box-shadow: 0px 0px 0px 3px #8EBEE1;
-  }
+.list-item-subtle {
+  color: rgba(#e5e5e5, 0.6);
+  border-bottom: none;
 }
 
 .std-image {
@@ -145,7 +93,7 @@ p {
 }
 
 .caption {
-  font-size: 13px;
-  color: #888;
+  color: #666;
   font-style: italic;
+  font-size: 0.8rem;
 }
