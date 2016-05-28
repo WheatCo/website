@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     position: relative;
   }
 
@@ -39,8 +39,14 @@
   .#{$p}row {
     flex-direction: row;
   }
+
   // ALIGNMENT
   // Use at most one vertical and one horizontal
+
+  .#{$p}left { text-align: left; }
+  .#{$p}center { text-align: center; }
+  .#{$p}right { text-align: right; }
+
   .#{$p}top:not(.#{$p}row),
   .#{$p}row.#{$p}left {
     justify-content: flex-start;
