@@ -19,12 +19,11 @@ html {
   font-size: 17px;
   min-height: 450px;
   background-repeat: no-repeat;
-  background-color: #fff;
   color: #222;
   font-weight: 300;
 }
 
-body, .footer {
+html, body, .footer {
   background-color: #202020;
 }
 
@@ -96,4 +95,104 @@ a {
   color: #666;
   font-style: italic;
   font-size: 0.8rem;
+}
+
+.Input-label {
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.Textbox {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 7px 8px;
+  transition: 110ms box-shadow ease-in-out, 110ms border-color ease-in-out;
+  font-size: 14px;
+
+  &:focus {
+    outline: 0;
+    // box-shadow: 0px 0px 0px 1.5px rgba(#149CEE, 0.7);
+    box-shadow: inset 0px 0px 0px 1.2px #149CEE;
+    border-color: #149CEE;
+  }
+}
+
+.Button {
+  display: block;
+  border-radius: 3px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 110ms box-shadow ease-in-out, 110ms border-color ease-in-out;
+  &:focus {
+    outline: 0;
+    box-shadow: 0px 0px 0px 2px #C7C7C7;
+  }
+  &:active, &:hover, &.active { box-shadow: none; }
+
+  &.secondary {
+    background-image: linear-gradient(-180deg, #ECEBEB 0%, #D8D8D8 100%);
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    color: #444;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    &>.Button-dropdown-icon {
+      border-top-color: #444;
+    }
+  }
+  &.secondary:active, &.secondary.active {
+    background-image: linear-gradient(0deg, #ECEBEB 0%, #D8D8D8 100%);
+  }
+
+  &.primary {
+    background-image: linear-gradient(-180deg, #0EA1F4 0%, #0691D3 100%);
+    border: 1px solid #117AC7;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-weight: 600;
+    &>.Button-dropdown-icon {
+      border-top-color: #fff;
+    }
+  }
+  &.primary:active, &.primary.active {
+    background-image: linear-gradient(0deg, #0EA1F4 0%, #0691D3 100%);
+  }
+
+  &.disabled {
+    cursor: default;
+    background-image: linear-gradient(-180deg, #ECEBEB 0%, #D8D8D8 100%);
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    color: #aaa;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    &>.Button-dropdown-icon {
+      border-top-color: #aaa;
+    }
+  }
+}
+
+
+.quote {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 3px;
+  padding: 15px 20px;
+  position: relative;
+  &:before {
+    content: '“';
+    position: absolute;
+    font-size: 5rem;
+    color: rgba(0,0,0,0.12);
+    top: -43px;
+    left: -10px;
+    font-weight: bold;
+  }
+}
+
+.quote-source {
+  font-size: 0.8rem;
+  display: block;
+  padding-top: 5px;
 }
