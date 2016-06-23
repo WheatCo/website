@@ -1,30 +1,34 @@
 ---
-title: Wheat Co.
+title: Hire Wheat Co.
 ---
+<h1>Start a Project</h1>
 
-<div class="hero middle">
-  <div class="hero-content">
-    <h1>Let's get your project rolling.</h1>
-  </div>
+<div class="col gap-3">
+  <p>Need a team of engineers to build your next project? We'd love to work together. If you're interested, you can contact us with this form.</p>
+
+  <p>As a rule of thumb, we generally bill $130 per developer-hour, but rates are negotiable for larger projects. We tend to complete projects quite quickly, and fixed-price contracts are also available.</p>
 </div>
 
-<div class="row gap-4">
-  <form class="centered-form col gap-3 fill-3" action="//formspree.io/hello@wheat.co" method="POST">
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="name" placeholder="Your Name">
-    </label>
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="_replyto" placeholder="Your Email">
-    </label>
-    <label class="col justify gap-1">
-      <textarea class="input-textarea" name="request" placeholder="How can we help you?" rows="7"></textarea>
-    </label>
-    <div class="row gap-3">
-      <input class="btn-primary" type="submit" value="Send Message">
-      <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
-    </div>
-  </form>
-  <div class="col gap-3 fill-2">
-    <p>We'd love to chat about possible future projects.</p>
+
+<form action="https://formspree.io/hello@wheat.co" method="POST" class="col gap-3" style="max-width: 400px;">
+  <div class="col gap-2">
+    <span class="Input-label">Your Email *</span>
+    <input class="Textbox" type="email" name="_replyto" required>
   </div>
-</div>
+  <div class="col gap-2">
+    <span class="Input-label">Your Name *</span>
+    <input class="Textbox" type="text" name="name" required>
+  </div>
+  <div class="col gap-2">
+    <span class="Input-label">What can we do for you? *</span>
+    <textarea class="Textbox" type="text" name="content" required rows=5></textarea>
+  </div>
+  <div class="col gap-2">
+    <span class="Input-label">What's your budget?</span>
+    <input class="Textbox" type="text" name="budget">
+  </div>
+  <div>
+    <input class="Button primary" type="submit" value="Send">
+  </div>
+  <input type="hidden" name="_next" value="https://wheat.co/thanks" />
+</form>

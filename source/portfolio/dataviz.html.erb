@@ -1,0 +1,32 @@
+---
+title: Data Visualization | Wheat Co
+---
+
+<h1>Case Study: Data Visualization</h1>
+
+<div class="xrow xgap-5 col gap-4">
+  <div class="col gap-3">
+    <p>When <a href="http://www.thesimpledollar.com/">The Simple Dollar</a> came to us, they were looking for a team of frontend engineers and designers to create an embeddable debt payoff calculator. We've now built them almost a dozen calculators of all sorts, including federal tax rates, state tax rates, auto loans, and a couple other types of interactive graphics.</p>
+    <p>In addition to design and development, we implemented the financial algorithms and researched statistics in-house.</p>
+    <p class="quote">
+      We always turn to Wheat Co when we need excellent interactive graphics &mdash; they produce content quickly, and at reasonable rates.
+      <span class="quote-source">&ndash; The Simple Dollar</span>
+    </p>
+    <p>We used the Mithril library to lay out elements and live-update calculations from user input. We regularly use frontend DOM-diffing libraries like Mithril or React for projects like this. The charts were done in D3, with custom styling. We also used our own in-house layout library, <a href="https://github.com/lord/flexblocks">Flexblocks</a>.</p>
+    <p>To this day, we continue to provide additional interactives and support to The Simple Dollar.</p>
+  </div>
+  <div class="col gap-4">
+    <div class="col gap-1">
+      <div><%= image_tag 'calc1.png', class: 'std-image', width: '300' %></div>
+      <p class="caption">An equity schedule generated from the user's data.</p>
+    </div>
+    <div class="col gap-1">
+      <div><%= image_tag 'calc2.png', class: 'std-image', width: '300' %></div>
+      <p class="caption">A dynamically updating pie chart from the project, explaining the breakdown of the user's expected pet cost.</p>
+    </div>
+    <div class="col gap-1">
+      <div><%= image_tag 'calc3.png', class: 'std-image', width: '300' %></div>
+      <p class="caption">A map of home insurance prices by state.</p>
+    </div>
+  </div>
+</div>
