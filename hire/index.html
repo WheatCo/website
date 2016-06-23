@@ -8,67 +8,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Wheat Co.</title>
+    <title>Hire Wheat Co.</title>
 
-    <link href="/stylesheets/all-04ff26e2.css" rel="stylesheet" />
+    <link href="/stylesheets/all-cd6aa596.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7763312/7591952/css/fonts.css" />
   </head>
 
   <body class="hire hire_index">
     <div class="content col gap-4 wrap">
       <div><a href="/" class="logo">wheat co</a></div>
-      <div class="hero middle">
-  <div class="hero-content">
-    <h1>Let's get your project rolling.</h1>
-  </div>
+      <h1>Start a Project</h1>
+
+<div class="col gap-3">
+  <p>Need a team of engineers to build your next project? We'd love to work together. If you're interested, you can contact us with this form.</p>
+
+  <p>As a rule of thumb, we generally bill $130 per developer-hour, but rates are negotiable for larger projects. We tend to complete projects quite quickly, and fixed-price contracts are also available.</p>
 </div>
 
-<div class="row gap-4">
-  <form class="centered-form col gap-3 fill-3" action="//formspree.io/hello@wheat.co" method="POST">
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="name" placeholder="Your Name">
-    </label>
-    <label class="col justify gap-1">
-      <input class="input-text" type="text" name="_replyto" placeholder="Your Email">
-    </label>
-    <label class="col justify gap-1">
-      <textarea class="input-textarea" name="request" placeholder="How can we help you?" rows="7"></textarea>
-    </label>
-    <div class="row gap-3">
-      <input class="btn-primary" type="submit" value="Send Message">
-      <input type="hidden" name="_next" value="https://wheat.co/thanks/" />
-    </div>
-  </form>
-  <div class="col gap-3 fill-2">
-    <p>We'd love to chat about possible future projects.</p>
+
+<form action="https://formspree.io/hello@wheat.co" method="POST" class="col gap-3" style="max-width: 400px;">
+  <div class="col gap-2">
+    <span class="Input-label">Your Email *</span>
+    <input class="Textbox" type="email" name="_replyto" required>
   </div>
-</div>
+  <div class="col gap-2">
+    <span class="Input-label">Your Name *</span>
+    <input class="Textbox" type="text" name="name" required>
+  </div>
+  <div class="col gap-2">
+    <span class="Input-label">What can we do for you? *</span>
+    <textarea class="Textbox" type="text" name="content" required rows=5></textarea>
+  </div>
+  <div class="col gap-2">
+    <span class="Input-label">What's your budget?</span>
+    <input class="Textbox" type="text" name="budget">
+  </div>
+  <div>
+    <input class="Button primary" type="submit" value="Send">
+  </div>
+  <input type="hidden" name="_next" value="https://wheat.co/thanks" />
+</form>
 
     </div>
     <div class="footer wrap">
       <div class="col xrow gap-4 xgap-5">
-<!--           <ul class="bulletless col gap-2">
+        <ul class="bulletless col gap-2">
           <li class="list-header">about us</li>
-          <li><a href="#">The Team</a></li>
-          <li><a href="#">Our Services</a></li>
+          <li><a href="/">Our Company</a></li>
+          <li><a href="/portfolio">Services &amp; Industries</a></li>
         </ul>
         <ul class="bulletless col gap-2">
           <li class="list-header">case studies</li>
-          <li><a href="#">Data Visualization</a></li>
-          <li><a href="#">Deployment</a></li>
-          <li><a href="#">Front-end Design</a></li>
-          <li><a href="#">Full-Stack </a></li>
+          <li><a href="/portfolio/dataviz">Data Visualization</a></li>
+          <li><a href="/portfolio/realtime">Real-Time Web Apps</a></li>
+          <li><a href="/portfolio/admin">Server Administration</a></li>
         </ul>
         <ul class="bulletless col gap-2">
           <li class="list-header">work with us</li>
-          <li><a href="#">Start a Project</a></li>
-          <li><a href="#">For Non-Profits</a></li>
+          <li><a href="/hire">Start a Project</a></li>
+          <li><a href="/nonprofits">For Non-Profits</a></li>
         </ul>
--->          <ul class="bulletless col gap-2">
+          <ul class="bulletless col gap-2">
           <li class="list-header">contact</li>
-          <li><a href="#" class="list-item-subtle">hello@wheat.co</a></li>
-          <li><a href="#" class="list-item-subtle">+1 510 246 5809</a></li>
-          <li ></li>
+          <li><a href="mailto:hello@wheat.co" class="list-item-subtle">hello@wheat.co</a></li>
+          <li><a href="tel:+17079432865" class="list-item-subtle">(707) WHEAT-65</a></li>
         </ul>
       </div>
     </div>
